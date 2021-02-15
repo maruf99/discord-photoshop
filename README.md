@@ -15,5 +15,5 @@ Make sure you have at least Node.js v10.0.0 or newer installed.
 
 You can edit the `config.json` file inside the folder to change the configuration. The available options are:
 
-- **idleText**: The text to show while idling. Defaults to "Idliing".
+- **idleText**: The text to show while idling. Defaults to "Idling".
 - **showWorkspaceDetails**: Whether to show details about the workspace, such as the current layer, zoom level, etc.
