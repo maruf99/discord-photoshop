@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "lib": [
+            "ES2020",
+            "ESNext"
+        ],
+        "module": "CommonJS",
+        "target": "ES2019",
+        "strict": true,
+        "alwaysStrict": true,
+        "strictNullChecks": true,
+        "esModuleInterop": true,
+        "moduleResolution": "Node",
+        "removeComments": false,
+        "pretty": true,
+        "resolveJsonModule": true
+    },
+    "include": [
+        "./src"
+    ],
+}
