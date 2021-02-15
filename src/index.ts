@@ -1,12 +1,10 @@
 import { Client } from 'discord-rpc';
 import { DISCORD_APPLICATION_ID } from './constants';
-import { log, LogTypes } from './log';
+import { handleError, log } from './util';
 import { loadPresence } from './presence';
 
 const rpc = new Client({ transport: 'ipc' });
 log('Starting...');
-
-const handleError = (e: Error): void => log(e.stack as string, LogTypes.Error);
 
 rpc.once('ready', () => {
     log('Ready');

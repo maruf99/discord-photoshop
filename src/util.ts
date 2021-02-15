@@ -9,3 +9,7 @@ export function log(str: string, type: LogTypes = LogTypes.Log): void {
     const message = `[Photoshop Rich Presence] => ${str}`;
     console.log(colorette[type](message));
 }
+
+export function handleError(e: any) {
+    log(e.stack ?? e, LogTypes.Error);
+}
